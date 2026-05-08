@@ -151,6 +151,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://game.xxym8.com/counter-strike-2/team-strategy/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://game.xxym8.com/counter-strike-2/weapon-guide/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1058,6 +1064,12 @@
   </url>
   <url>
     <loc>https://game.xxym8.com/valorant/economy-guide/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://game.xxym8.com/valorant/map-guide/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
