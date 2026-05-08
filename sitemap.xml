@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://game.xxym8.com/among-us/</loc></url>
+  <url><loc>https://game.xxym8.com/among-us/imposter-guide/</loc></url>
   <url><loc>https://game.xxym8.com/apex-legends/</loc></url>
   <url><loc>https://game.xxym8.com/apex-legends/legends-guide/</loc></url>
   <url><loc>https://game.xxym8.com/apex-legends/settings-guide/</loc></url>
@@ -22,19 +24,26 @@
   <url><loc>https://game.xxym8.com/counter-strike-2/economy-guide/</loc></url>
   <url><loc>https://game.xxym8.com/counter-strike-2/smoke-guide/</loc></url>
   <url><loc>https://game.xxym8.com/counter-strike-2/weapon-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/dead-by-daylight/</loc></url>
+  <url><loc>https://game.xxym8.com/dead-by-daylight/killer-tier/</loc></url>
+  <url><loc>https://game.xxym8.com/dead-by-daylight/survivor-guide/</loc></url>
   <url><loc>https://game.xxym8.com/death-stranding-2/</loc></url>
   <url><loc>https://game.xxym8.com/death-stranding-2/collectibles-guide/</loc></url>
   <url><loc>https://game.xxym8.com/death-stranding-2/vehicles-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/deep-rock-galactic/</loc></url>
+  <url><loc>https://game.xxym8.com/deep-rock-galactic/class-guide/</loc></url>
   <url><loc>https://game.xxym8.com/doors/</loc></url>
   <url><loc>https://game.xxym8.com/doors/entity-guide/</loc></url>
   <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/</loc></url>
   <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/combos-guide/</loc></url>
   <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/tier-list-guide/</loc></url>
-  <url><loc>https://game.xxym8.com/elden-ring-nightreign/</loc></url>
-  <url><loc>https://game.xxym8.com/elden-ring-nightreign/coop-guide/</loc></url>
   <url><loc>https://game.xxym8.com/elden-ring/</loc></url>
   <url><loc>https://game.xxym8.com/elden-ring/boss-guide/</loc></url>
   <url><loc>https://game.xxym8.com/elden-ring/weapons-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/elden-ring-nightreign/</loc></url>
+  <url><loc>https://game.xxym8.com/elden-ring-nightreign/coop-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/fall-guys/</loc></url>
+  <url><loc>https://game.xxym8.com/fall-guys/winning-guide/</loc></url>
   <url><loc>https://game.xxym8.com/fc-25/</loc></url>
   <url><loc>https://game.xxym8.com/fc-25/career-mode-guide/</loc></url>
   <url><loc>https://game.xxym8.com/fc-25/coins-guide/</loc></url>
@@ -90,6 +99,9 @@
   <url><loc>https://game.xxym8.com/once-human/</loc></url>
   <url><loc>https://game.xxym8.com/once-human/builds-guide/</loc></url>
   <url><loc>https://game.xxym8.com/once-human/farming-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/palworld/</loc></url>
+  <url><loc>https://game.xxym8.com/palworld/base-pals/</loc></url>
+  <url><loc>https://game.xxym8.com/palworld/breeding-guide/</loc></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/</loc></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/beginner-guide/</loc></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/builds-guide/</loc></url>
@@ -108,14 +120,27 @@
   <url><loc>https://game.xxym8.com/rivals-of-aether/</loc></url>
   <url><loc>https://game.xxym8.com/rivals-of-aether/di-guide/</loc></url>
   <url><loc>https://game.xxym8.com/rivals-of-aether/movement-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/rocket-league/</loc></url>
+  <url><loc>https://game.xxym8.com/rocket-league/car-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/rocket-league/rotation-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/rust/</loc></url>
+  <url><loc>https://game.xxym8.com/rust/base-design/</loc></url>
+  <url><loc>https://game.xxym8.com/rust/pvp-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/sea-of-thieves/</loc></url>
+  <url><loc>https://game.xxym8.com/sea-of-thieves/gold-guide/</loc></url>
   <url><loc>https://game.xxym8.com/slay-the-spire-2/</loc></url>
   <url><loc>https://game.xxym8.com/slay-the-spire-2/character-tier/</loc></url>
+  <url><loc>https://game.xxym8.com/sons-of-the-forest/</loc></url>
+  <url><loc>https://game.xxym8.com/sons-of-the-forest/survival-guide/</loc></url>
   <url><loc>https://game.xxym8.com/splatoon-3/</loc></url>
   <url><loc>https://game.xxym8.com/splatoon-3/ranking-guide/</loc></url>
   <url><loc>https://game.xxym8.com/splatoon-3/weapon-tier/</loc></url>
   <url><loc>https://game.xxym8.com/stardew-valley/</loc></url>
   <url><loc>https://game.xxym8.com/stardew-valley/farming-guide/</loc></url>
   <url><loc>https://game.xxym8.com/stardew-valley/mining-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/tarkov/</loc></url>
+  <url><loc>https://game.xxym8.com/tarkov/extraction-guide/</loc></url>
+  <url><loc>https://game.xxym8.com/tarkov/loot-guide/</loc></url>
   <url><loc>https://game.xxym8.com/tekken-8/</loc></url>
   <url><loc>https://game.xxym8.com/tekken-8/characters-guide/</loc></url>
   <url><loc>https://game.xxym8.com/tekken-8/combos-guide/</loc></url>
