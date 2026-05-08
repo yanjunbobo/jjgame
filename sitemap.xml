@@ -3,6 +3,7 @@
   <url><loc>https://game.xxym8.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://game.xxym8.com/apex-legends/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/apex-legends/legends-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/apex-legends/settings-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/apex-legends/weapons-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/balatro/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/balatro/decks-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -10,41 +11,53 @@
   <url><loc>https://game.xxym8.com/black-myth-wukong/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/black-myth-wukong/bosses-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/black-myth-wukong/builds-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/blox-fruits/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/blox-fruits/fruit-tier/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/call-of-duty-2026/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/call-of-duty-2026/weapons-guide/index.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://game.xxym8.com/counter-strike-2/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/counter-strike-2/economy-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/counter-strike-2/smoke-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/counter-strike-2/weapon-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://game.xxym8.com/counter-strike-2/economy-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/death-stranding-2/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/death-stranding-2/collectibles-guide/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/death-stranding-2/vehicles-guide/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/combos-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/dragon-ball-sparking-zero/tier-list-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/elden-ring-nightreign/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/elden-ring-nightreign/coop-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/elden-ring/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/elden-ring/boss-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/elden-ring/weapons-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://game.xxym8.com/elden-ring-nightreign/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://game.xxym8.com/elden-ring-nightreign/coop-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/fc-25/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/fc-25/career-mode-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/fc-25/tactics-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/fortnite/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://game.xxym8.com/fortnite/map-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/fortnite/building-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/fortnite/poi-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/fortnite/weapon-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/genshin-impact/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/genshin-impact/artifact-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/genshin-impact/reroll-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/genshin-impact/resin-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/genshin-impact/team-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/gta-6/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/gta-6/heists-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/gta-6/money-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/gta-6/vehicles-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/hades-2/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/hades-2/arcana-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/hades-2/weapons-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/heroes-of-might-and-magic-olden-era/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://game.xxym8.com/heroes-of-might-and-magic-olden-era/faction-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/heroes-of-might-and-magic-olden-era/combat-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/heroes-of-might-and-magic-olden-era/faction-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/honkai-star-rail/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://game.xxym8.com/honkai-star-rail/characters-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><https://game.xxym8.com/honkai-star-rail/characters-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/honkai-star-rail/relics-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/honkai-star-rail/reroll-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/honkai-star-rail/stamina-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/honkai-star-rail/team-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/league-of-legends/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/league-of-legends/champions-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/league-of-legends/roles-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -52,8 +65,9 @@
   <url><loc>https://game.xxym8.com/lethal-company/moons-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/lethal-company/tips-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/marvel-rivals/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://game.xxym8.com/marvel-rivals/tier-list-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/marvel-rivals/counter-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/marvel-rivals/heroes-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/marvel-rivals/tier-list-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/monster-hunter-wilds/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/monster-hunter-wilds/armor-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/monster-hunter-wilds/bosses-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -63,19 +77,22 @@
   <url><loc>https://game.xxym8.com/once-human/builds-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/once-human/farming-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/path-of-exile-2/beginner-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/builds-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/path-of-exile-2/currency-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-go/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/pokemon-go/eggs-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-go/pvp-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-go/raids-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://game.xxym8.com/pokemon-go/eggs-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-tcg-pocket/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-tcg-pocket/battle-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pokemon-tcg-pocket/card-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/pokemon-tcg-pocket/meta-decks/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pubg-mobile/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://game.xxym8.com/pubg-mobile/sensitivity-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/pubg-mobile/drop-spots/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/pubg-mobile/sensitivity-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/slay-the-spire-2/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/slay-the-spire-2/character-tier/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/stardew-valley/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://game.xxym8.com/stardew-valley/farming-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/stardew-valley/mining-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -89,5 +106,7 @@
   <url><loc>https://game.xxym8.com/valorant/agents-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/valorant/economy-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/zenless-zone-zero/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://game.xxym8.com/zenless-zone-zero/beginners-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://game.xxym8.com/zenless-zone-zero/reroll-guide/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://game.xxym8.com/zenless-zone-zero/team-comps/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
