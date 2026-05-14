@@ -43,8 +43,12 @@ export function loadoutPickerTool() {
   return panel("loadout-picker", `<div class="tool-grid">${select("game", gameOptions())}${select("range", ["Close", "Mid", "Long", "Flexible"])}${select("role", ["Entry", "Support", "Control", "Burst", "Sustain"])}${select("skill", ["Beginner", "Advanced"])}${select("mode", ["Solo", "Team"])}<button class="button" data-run-tool>Pick Loadout</button></div>`);
 }
 
+export function metaShiftPlannerTool() {
+  return panel("meta-shift-planner", `<div class="tool-grid">${select("game", gameOptions())}${select("change", ["New patch", "Balance change", "Map rotation", "Popular strategy", "New season"])}${select("role", ["Damage", "Support", "Tank", "Entry", "Farmer", "Builder", "Explorer", "Driver"])}${select("risk", ["Low risk", "Balanced", "Aggressive testing"])}${select("session", ["One match", "30 minutes", "One evening"])}<button class="button" data-run-tool>Plan Test</button></div>`);
+}
+
 export function randomGamePickerTool() {
-  return panel("random-game-picker", `<div class="tool-grid">${select("genre", ["Any", "RPG", "Shooter", "Survival", "Sandbox", "MOBA", "Mobile", "MMO", "Roguelike"])}${select("platform", ["Any", "PC", "PlayStation", "Xbox", "Switch", "Mobile"])}${select("session", ["Short", "Medium", "Long"])}${select("mode", ["Solo", "Co-op", "Either"])}<button class="button" data-run-tool>Pick Game</button></div>`);
+  return panel("random-game-picker", `<div class="tool-grid">${select("genre", ["Any", "RPG", "Shooter", "Survival", "Sandbox", "MOBA", "Mobile", "MMO", "Roguelike", "Battle Royale", "Extraction Shooter", "Racing", "Open World"])}${select("platform", ["Any", "PC", "PlayStation", "Xbox", "Switch", "Mobile"])}${select("session", ["Short", "Medium", "Long"])}${select("mode", ["Solo", "Co-op", "Either"])}<button class="button" data-run-tool>Pick Game</button></div>`);
 }
 
 export function settingsOptimizerTool() {
@@ -59,6 +63,7 @@ export function renderTool(slug) {
     "progress-checklist": progressChecklistTool,
     "farming-route-planner": farmingRoutePlannerTool,
     "loadout-picker": loadoutPickerTool,
+    "meta-shift-planner": metaShiftPlannerTool,
     "random-game-picker": randomGamePickerTool,
     "settings-optimizer": settingsOptimizerTool
   };
@@ -124,6 +129,10 @@ function resultFor(slug, game, data) {
   }
   if (slug === "loadout-picker") {
     return `<div class="result-card"><h3>${escapeHtml(data.range)} ${escapeHtml(data.role)} Loadout</h3><p>Why it works: it keeps your role clear while leaving one flexible slot for map, team, or boss pressure.</p><p>Weakness: specialized opponents may force a swap if you cannot control distance.</p><a class="button" href="/games/${game.slug}/best-builds" data-link>Open Related Guide</a></div>`;
+  }
+  if (slug === "meta-shift-planner") {
+    const testPlan = `${game.name} ${data.change} ${data.role} ${data.risk} test plan`;
+    return `<div class="result-card"><h3>${escapeHtml(data.change)} Test Plan</h3><p>Use this as an editorial planning tool, not as official patch analysis. The goal is to test one meaningful change without rebuilding your entire setup.</p><ol><li>Keep your current setup as the control version.</li><li>Change one slot related to ${escapeHtml(data.role)} pressure.</li><li>Run the test for ${escapeHtml(data.session)} and track comfort, mistakes, and clear value.</li><li>If the new version only wins in perfect conditions, keep it as a situational option.</li></ol><button class="button ghost" data-copy="${escapeHtml(testPlan)}">Copy Test Plan</button><a class="button" href="/games/${game.slug}" data-link>Open Game Hub</a></div>`;
   }
   if (slug === "random-game-picker") {
     const pool = games.filter((item) => (data.genre === "Any" || item.genre === data.genre) && (data.platform === "Any" || item.platforms.includes(data.platform)));

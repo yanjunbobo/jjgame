@@ -28,11 +28,33 @@ const names = [
   ["terraria", "Terraria", "Sandbox", ["PC", "PlayStation", "Xbox", "Switch", "Mobile"], ["Bosses", "Crafting", "Co-op"], "Moderate", "Evergreen", "#6bb6ff"],
   ["warframe", "Warframe", "MMO", ["PC", "PlayStation", "Xbox", "Switch"], ["F2P", "Farming", "Builds"], "Moderate", "Evergreen", "#00d4ff"],
   ["world-of-warcraft", "World of Warcraft", "MMO", ["PC"], ["Endgame", "Builds", "Raids"], "Hard", "Evergreen", "#2f80ed"],
-  ["final-fantasy-xiv", "Final Fantasy XIV", "MMO", ["PC", "PlayStation", "Xbox"], ["Story", "Raids", "Jobs"], "Moderate", "Evergreen", "#7b61ff"]
+  ["final-fantasy-xiv", "Final Fantasy XIV", "MMO", ["PC", "PlayStation", "Xbox"], ["Story", "Raids", "Jobs"], "Moderate", "Evergreen", "#7b61ff"],
+  ["grand-theft-auto-online", "Grand Theft Auto Online", "Open World", ["PC", "PlayStation", "Xbox"], ["Open World", "Money", "Co-op", "Vehicles"], "Moderate", "High interest", "#37d67a"],
+  ["rust", "Rust", "Survival", ["PC", "PlayStation", "Xbox"], ["Survival", "PvP", "Base Building", "Farming"], "Hard", "High interest", "#d97845"],
+  ["dayz", "DayZ", "Survival", ["PC", "PlayStation", "Xbox"], ["Survival", "Open World", "PvP", "Beginner-friendly"], "Hard", "Popular", "#8aa16a"],
+  ["rainbow-six-siege", "Rainbow Six Siege", "Shooter", ["PC", "PlayStation", "Xbox"], ["Competitive", "Ranked", "Operators", "Settings"], "Hard", "Popular", "#f5d04c"],
+  ["call-of-duty-warzone", "Call of Duty: Warzone", "Battle Royale", ["PC", "PlayStation", "Xbox"], ["Competitive", "Loadouts", "F2P", "Ranked"], "Moderate", "High interest", "#7fb069"],
+  ["escape-from-tarkov", "Escape from Tarkov", "Extraction Shooter", ["PC"], ["Extraction", "PvP", "Farming", "Loadouts"], "Hard", "Popular", "#9b8f7a"],
+  ["helldivers-2", "Helldivers 2", "Shooter", ["PC", "PlayStation", "Xbox"], ["Co-op", "Loadouts", "Missions", "Farming"], "Moderate", "Trending", "#f6c445"],
+  ["palworld", "Palworld", "Survival", ["PC", "Xbox", "PlayStation"], ["Open World", "Co-op", "Base Building", "Collection"], "Moderate", "Evergreen", "#69d2e7"],
+  ["forza-horizon-6", "Forza Horizon 6", "Racing", ["PC", "Xbox"], ["Racing", "Tuning", "Open World", "Cars"], "Beginner-friendly", "Trending", "#ff4f9a"],
+  ["subnautica-2", "Subnautica 2", "Survival", ["PC", "Xbox"], ["Survival", "Exploration", "Base Building", "Co-op"], "Moderate", "Trending", "#28c7fa"]
 ];
 
 const guideTypes = ["Beginner Guide", "Best Builds", "Tier List", "Walkthrough", "Farming Routes", "Boss Guide", "Weapons / Characters / Items", "Tips & Tricks", "FAQ"];
-const toolSlugs = ["guide-finder", "build-finder", "tier-list-explorer", "progress-checklist", "farming-route-planner", "loadout-picker"];
+const toolSlugs = ["guide-finder", "build-finder", "tier-list-explorer", "progress-checklist", "farming-route-planner", "loadout-picker", "meta-shift-planner"];
+const extraGuideSlugs = {
+  "grand-theft-auto-online": ["money-guide", "vehicle-guide"],
+  rust: ["base-design-guide", "pvp-loadout-guide"],
+  dayz: ["first-hour-survival", "loot-route-guide"],
+  "rainbow-six-siege": ["operator-guide", "ranked-setup-guide"],
+  "call-of-duty-warzone": ["loadout-guide", "drop-route-guide"],
+  "escape-from-tarkov": ["extraction-guide", "budget-kit-guide"],
+  "helldivers-2": ["stratagem-guide", "mission-farming-guide"],
+  palworld: ["base-building-guide", "pal-breeding-guide"],
+  "forza-horizon-6": ["car-tuning-guide", "money-and-progression-guide"],
+  "subnautica-2": ["base-building-guide", "exploration-route-guide"]
+};
 
 export const games = names.map(([slug, name, genre, platforms, tags, difficulty, popularityLabel, heroColor], index) => ({
   id: index + 1,
@@ -47,7 +69,7 @@ export const games = names.map(([slug, name, genre, platforms, tags, difficulty,
   popularityLabel,
   updatedAt: "2026-05-14",
   heroColor,
-  guides: ["beginner-guide", "best-builds", "farming-guide"],
+  guides: ["beginner-guide", "best-builds", "farming-guide", ...(extraGuideSlugs[slug] || [])],
   tools: toolSlugs,
   bestFor: tags.slice(0, 3).join(", "),
   faq: [
@@ -62,6 +84,6 @@ export const games = names.map(([slug, name, genre, platforms, tags, difficulty,
   ]
 }));
 
-export const genres = ["RPG", "Shooter", "Survival", "Sandbox", "MOBA", "Sports", "Strategy", "Roguelike", "Mobile", "MMO"];
+export const genres = ["RPG", "Shooter", "Survival", "Sandbox", "MOBA", "Sports", "Strategy", "Roguelike", "Mobile", "MMO", "Open World", "Battle Royale", "Extraction Shooter", "Racing"];
 export const platforms = [...new Set(games.flatMap((game) => game.platforms))].sort();
 export const tags = [...new Set(games.flatMap((game) => game.tags))].sort();

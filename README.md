@@ -113,12 +113,12 @@ The build creates:
 
 - Home page
 - Games index
-- 30 game hub pages
-- 90 starter guide pages
+- 40 game hub pages
+- 140 starter and topic guide pages
 - Tool index and tool pages
 - Tier list and walkthrough aggregation
 - Blog index and article pages
-- Genre, platform, and tag landing pages
+- Genre, platform, tag, and collection landing pages
 - Basic pages: About, Contact, Privacy, Terms, Disclaimer, Sitemap
 
 ## Copyright and Trademark Notes

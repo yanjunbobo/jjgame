@@ -29,6 +29,31 @@ import {
 import { renderTool, wireTools } from "./components/tools.js";
 
 const app = document.querySelector("#app");
+const seoCollections = [
+  ["trending-games", "Trending Games", (game) => game.popularityLabel === "Trending" || game.popularityLabel === "High interest"],
+  ["competitive-shooters", "Competitive Shooters", (game) => ["Shooter", "Battle Royale", "Extraction Shooter"].includes(game.genre) && game.tags.includes("Competitive")],
+  ["survival-crafting-games", "Survival and Crafting Games", (game) => game.genre === "Survival" || game.tags.includes("Base Building")],
+  ["co-op-games", "Co-op Games", (game) => game.tags.includes("Co-op") || game.tags.includes("Team Play")],
+  ["live-service-games", "Live-Service Games", (game) => game.tags.includes("F2P") || game.tags.includes("Ranked") || game.tags.includes("Missions")],
+  ["new-player-friendly-games", "New Player Friendly Games", (game) => game.difficulty === "Beginner-friendly" || game.tags.includes("Beginner-friendly")],
+  ["high-skill-games", "High Skill Games", (game) => game.difficulty === "Hard"],
+  ["open-world-games", "Open World Games", (game) => game.genre === "Open World" || game.tags.includes("Open World")],
+  ["farming-games", "Farming Route Games", (game) => game.tags.includes("Farming")],
+  ["loadout-games", "Loadout Guide Games", (game) => game.tags.includes("Loadouts") || game.tags.includes("Builds")]
+];
+const tagAliases = {
+  "beginner-guides": ["Beginner-friendly"],
+  "best-builds": ["Builds"],
+  "farming-routes": ["Farming"],
+  "tier-lists": ["Tier Lists"],
+  "pvp-loadouts": ["PvP", "Loadouts"],
+  "settings-optimization": ["Settings", "Tuning"],
+  "base-building": ["Base Building"],
+  "extraction-guides": ["Extraction"],
+  "money-guides": ["Money"],
+  "co-op-guides": ["Co-op", "Team Play"],
+  "open-world-guides": ["Open World"]
+};
 
 function section(title, content, cls = "section") {
   return `<section class="${cls}"><div class="section-head"><h2>${title}</h2></div>${content}</section>`;
@@ -172,12 +197,16 @@ function blogPost(slug) {
 
 function aggregatePage(type, value) {
   const label = value.replaceAll("-", " ");
+  const collection = seoCollections.find((item) => item[0] === value);
   const matched = games.filter((game) => {
     if (type === "genres") return game.genre.toLowerCase() === label.toLowerCase();
     if (type === "platforms") return game.platforms.some((platform) => platform.toLowerCase() === label.toLowerCase());
-    return game.tags.some((tag) => tag.toLowerCase().replaceAll(" ", "-") === value);
+    if (type === "collections") return collection ? collection[2](game) : false;
+    const aliases = tagAliases[value] || [label];
+    return game.tags.some((tag) => aliases.some((alias) => tag.toLowerCase() === alias.toLowerCase()));
   });
-  return shell(`${breadcrumbs([{ label: "Home", href: "/" }, { label: type }, { label }])}<section class="page-hero"><h1>${escapeHtml(label.replace(/\b\w/g, (c) => c.toUpperCase()))} Game Guides</h1><p>Filtered game hubs and guide tools for this SEO category.</p></section>${section("Matching Games", `<div class="card-grid">${matched.map(gameCard).join("") || "<p>No matching games yet.</p>"}</div>`)}`);
+  const title = collection ? collection[1] : label.replace(/\b\w/g, (c) => c.toUpperCase());
+  return shell(`${breadcrumbs([{ label: "Home", href: "/" }, { label: type }, { label: title }])}<section class="page-hero"><h1>${escapeHtml(title)} Game Guides</h1><p>Filtered game hubs, guide pages, and tools for this SEO category. Use these pages to jump into games by intent, genre, platform, or current player need.</p></section>${section("Matching Games", `<div class="card-grid">${matched.map(gameCard).join("") || "<p>No matching games yet.</p>"}</div>`)}${section("Useful Tools", `<div class="tool-grid-cards">${tools.slice(0, 5).map(toolCard).join("")}</div>`)}`);
 }
 
 function basicPage(slug) {
@@ -211,7 +240,7 @@ function render() {
   else if (path === "/walkthroughs") html = walkthroughsPage();
   else if (path === "/blog") html = blogPage();
   else if (parts[0] === "blog" && parts.length === 2) html = blogPost(parts[1]);
-  else if (["genres", "platforms", "tags"].includes(parts[0]) && parts.length === 2) html = aggregatePage(parts[0], parts[1]);
+  else if (["genres", "platforms", "tags", "collections"].includes(parts[0]) && parts.length === 2) html = aggregatePage(parts[0], parts[1]);
   else html = basicPage(parts[0]);
   app.innerHTML = html;
   wire();

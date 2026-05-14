@@ -27,6 +27,49 @@ const guideKinds = [
   }
 ];
 
+const extraGuideKinds = {
+  "grand-theft-auto-online": [
+    { slug: "money-guide", type: "Money Guide", suffix: "Money Guide", goal: "compare safe solo income, co-op jobs, and vehicle investment priorities", skill: "All skill levels", time: "15-25 minutes" },
+    { slug: "vehicle-guide", type: "Vehicle Guide", suffix: "Vehicle Guide", goal: "choose practical vehicles for missions, travel, racing, and defensive play", skill: "Beginner to intermediate", time: "10-20 minutes" }
+  ],
+  rust: [
+    { slug: "base-design-guide", type: "Base Design Guide", suffix: "Base Design Guide", goal: "plan a compact starter base that protects resources without wasting farm", skill: "Beginner to intermediate", time: "20-35 minutes" },
+    { slug: "pvp-loadout-guide", type: "PvP Guide", suffix: "PvP Loadout Guide", goal: "pick simple weapons, armor, and utility for early fights and monument pressure", skill: "Intermediate", time: "15-25 minutes" }
+  ],
+  dayz: [
+    { slug: "first-hour-survival", type: "Survival Guide", suffix: "First Hour Survival Guide", goal: "stabilize food, water, warmth, and direction before chasing combat", skill: "New player", time: "20-30 minutes" },
+    { slug: "loot-route-guide", type: "Loot Route Guide", suffix: "Loot Route Guide", goal: "move through towns and medical areas without turning every stop into a risk spike", skill: "Beginner to intermediate", time: "15-25 minutes" }
+  ],
+  "rainbow-six-siege": [
+    { slug: "operator-guide", type: "Operator Guide", suffix: "Operator Guide", goal: "choose operators by role, site plan, and team utility instead of raw popularity", skill: "Beginner to intermediate", time: "15-25 minutes" },
+    { slug: "ranked-setup-guide", type: "Settings Guide", suffix: "Ranked Setup Guide", goal: "prepare sensitivity, audio, roles, and map notes before ranked sessions", skill: "Intermediate", time: "15-25 minutes" }
+  ],
+  "call-of-duty-warzone": [
+    { slug: "loadout-guide", type: "Loadout Guide", suffix: "Loadout Guide", goal: "build a practical primary, secondary, perk, and equipment package for your squad role", skill: "Beginner to intermediate", time: "10-20 minutes" },
+    { slug: "drop-route-guide", type: "Drop Route Guide", suffix: "Drop Route Guide", goal: "pick opening drops by risk, contracts, rotations, and squad confidence", skill: "All skill levels", time: "10-20 minutes" }
+  ],
+  "escape-from-tarkov": [
+    { slug: "extraction-guide", type: "Extraction Guide", suffix: "Extraction Guide", goal: "plan raids around extraction confidence, loot weight, and noise discipline", skill: "New player", time: "20-35 minutes" },
+    { slug: "budget-kit-guide", type: "Loadout Guide", suffix: "Budget Kit Guide", goal: "choose a kit that protects learning without risking your whole stash", skill: "Beginner", time: "15-25 minutes" }
+  ],
+  "helldivers-2": [
+    { slug: "stratagem-guide", type: "Loadout Guide", suffix: "Stratagem Guide", goal: "combine anti-armor, crowd control, utility, and extraction tools for co-op missions", skill: "Beginner to intermediate", time: "10-20 minutes" },
+    { slug: "mission-farming-guide", type: "Farming Guide", suffix: "Mission Farming Guide", goal: "route samples, medals, and objectives without leaving the squad under-equipped", skill: "All skill levels", time: "15-25 minutes" }
+  ],
+  palworld: [
+    { slug: "base-building-guide", type: "Base Guide", suffix: "Base Building Guide", goal: "organize production, workers, storage, and defense before expanding too fast", skill: "Beginner to intermediate", time: "20-30 minutes" },
+    { slug: "pal-breeding-guide", type: "Character Guide", suffix: "Pal Breeding Guide", goal: "plan simple breeding goals without turning every session into spreadsheet work", skill: "Intermediate", time: "15-25 minutes" }
+  ],
+  "forza-horizon-6": [
+    { slug: "car-tuning-guide", type: "Settings Guide", suffix: "Car Tuning Guide", goal: "adjust tires, gearing, aero, and assists for stable driving before chasing peak lap times", skill: "Beginner to intermediate", time: "15-25 minutes" },
+    { slug: "money-and-progression-guide", type: "Progression Guide", suffix: "Money and Progression Guide", goal: "prioritize races, upgrades, and collection goals without burning out on repeat events", skill: "All skill levels", time: "10-20 minutes" }
+  ],
+  "subnautica-2": [
+    { slug: "base-building-guide", type: "Base Guide", suffix: "Base Building Guide", goal: "place a safe starter base with storage, scanning, power, and expansion routes", skill: "Beginner", time: "20-30 minutes" },
+    { slug: "exploration-route-guide", type: "Walkthrough", suffix: "Exploration Route Guide", goal: "explore new biomes in a sensible order while limiting oxygen and inventory mistakes", skill: "Beginner to intermediate", time: "20-35 minutes" }
+  ]
+};
+
 function paragraphs(game, kind) {
   const combatWord = game.genre === "Shooter" || game.genre === "MOBA" ? "matches" : game.genre === "Sandbox" ? "sessions" : "runs";
   return [
@@ -57,7 +100,7 @@ function paragraphs(game, kind) {
   ];
 }
 
-export const guides = games.flatMap((game) => guideKinds.map((kind, index) => ({
+export const guides = games.flatMap((game) => [...guideKinds, ...(extraGuideKinds[game.slug] || [])].map((kind, index) => ({
   id: `${game.slug}-${kind.slug}`,
   gameSlug: game.slug,
   gameName: game.name,

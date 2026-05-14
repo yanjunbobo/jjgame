@@ -17,6 +17,10 @@
   <url><loc>https://game.xxym8.com/genres/survival</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/genres/sandbox</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/genres/mobile</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/genres/battle-royale</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/genres/extraction-shooter</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/genres/open-world</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/genres/racing</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/platforms/pc</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/platforms/playstation</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/platforms/xbox</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -25,12 +29,30 @@
   <url><loc>https://game.xxym8.com/tags/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tags/farming-routes</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tags/tier-lists</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/pvp-loadouts</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/settings-optimization</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/base-building</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/extraction-guides</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/money-guides</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/co-op-guides</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tags/open-world-guides</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/trending-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/competitive-shooters</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/survival-crafting-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/co-op-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/live-service-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/new-player-friendly-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/high-skill-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/open-world-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/farming-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/collections/loadout-games</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/guide-finder</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/build-finder</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/tier-list-explorer</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/progress-checklist</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/farming-route-planner</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/loadout-picker</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/tools/meta-shift-planner</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/settings-optimizer</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/tools/random-game-picker</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/blog/how-to-use-game-guides-without-spoilers</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -69,6 +91,16 @@
   <url><loc>https://game.xxym8.com/games/warframe</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/world-of-warcraft</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/final-fantasy-xiv</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/genshin-impact/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/genshin-impact/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/genshin-impact/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -159,4 +191,54 @@
   <url><loc>https://game.xxym8.com/games/final-fantasy-xiv/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/final-fantasy-xiv/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://game.xxym8.com/games/final-fantasy-xiv/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online/money-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/grand-theft-auto-online/vehicle-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust/base-design-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rust/pvp-loadout-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz/first-hour-survival</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/dayz/loot-route-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege/operator-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/rainbow-six-siege/ranked-setup-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone/loadout-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/call-of-duty-warzone/drop-route-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov/extraction-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/escape-from-tarkov/budget-kit-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2/stratagem-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/helldivers-2/mission-farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld/base-building-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/palworld/pal-breeding-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6/car-tuning-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/forza-horizon-6/money-and-progression-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2/beginner-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2/best-builds</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2/farming-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2/base-building-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://game.xxym8.com/games/subnautica-2/exploration-route-guide</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

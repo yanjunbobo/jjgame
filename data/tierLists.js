@@ -3,7 +3,7 @@ import { games } from "./games.js";
 const categories = ["character", "weapon", "class", "item", "map"];
 const names = ["Starter Anchor", "Flexible Carry", "Control Pick", "Burst Option", "Safe Utility", "Niche Tech", "High-Risk Snowball", "Comfort Choice"];
 
-export const tierLists = games.slice(0, 24).map((game, index) => ({
+export const tierLists = games.map((game, index) => ({
   id: `${game.slug}-sample-tier-list`,
   gameSlug: game.slug,
   gameName: game.name,
