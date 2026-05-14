@@ -169,13 +169,13 @@ input, select {
 }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; }
 .section h2, .article h2 { margin-top: 0; line-height: 1.2; letter-spacing: 0; }
-.card-grid, .guide-grid, .tool-grid-cards {
+.card-grid, .guide-grid, .tool-grid-cards, .cluster-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 .tool-grid-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.game-card, .guide-card, .tool-card {
+.game-card, .guide-card, .tool-card, .cluster-card {
   display: grid;
   gap: 12px;
   align-content: start;
@@ -186,8 +186,8 @@ input, select {
   background: linear-gradient(150deg, color-mix(in srgb, var(--accent, var(--blue)) 20%, transparent), transparent 45%), var(--panel);
   box-shadow: var(--shadow);
 }
-.game-card h3, .guide-card h3, .tool-card h3 { margin: 0; font-size: 20px; line-height: 1.25; }
-.game-card p, .guide-card p, .tool-card p, .muted { color: var(--muted); }
+.game-card h3, .guide-card h3, .tool-card h3, .cluster-card h3 { margin: 0; font-size: 20px; line-height: 1.25; }
+.game-card p, .guide-card p, .tool-card p, .cluster-card p, .muted { color: var(--muted); }
 .game-card-top { display: flex; align-items: center; justify-content: space-between; }
 .letter {
   width: 44px;
@@ -258,6 +258,28 @@ input, select {
   border-radius: 8px;
   background: rgba(57, 167, 255, 0.08);
 }
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+  background: var(--panel);
+}
+th, td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  color: var(--text);
+  background: rgba(57, 167, 255, 0.08);
+}
+td { color: var(--muted); }
 .checklist li { margin-bottom: 8px; }
 
 .filters, .tool-grid {
@@ -334,7 +356,7 @@ summary { cursor: pointer; font-weight: 800; }
   .mobile-nav a { padding: 10px; color: var(--muted); }
   .hero, .game-hero, .article-layout, .site-footer { grid-template-columns: 1fr; }
   .toc { position: static; }
-  .card-grid, .guide-grid, .tool-grid-cards, .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filters, .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -343,7 +365,7 @@ summary { cursor: pointer; font-weight: 800; }
   .hero, .page-hero, .game-hero, .section, .filters, .breadcrumbs, .article-layout, .tool-interface, .notice, .ad-slot, .affiliate-box { width: min(100% - 22px, 1180px); }
   .hero-copy, .quick-panel, .page-hero, .game-hero > div, .article { padding: 18px; }
   .hero h1, .page-hero h1, .game-hero h1, .article h1 { font-size: 34px; }
-  .card-grid, .guide-grid, .tool-grid-cards, .link-grid, .filters, .tool-grid { grid-template-columns: 1fr; }
+  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid, .filters, .tool-grid { grid-template-columns: 1fr; }
   .overview-card dl { grid-template-columns: 1fr; }
   .cta-row .button { width: 100%; }
 }

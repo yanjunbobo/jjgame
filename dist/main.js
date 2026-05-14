@@ -59,6 +59,27 @@ function section(title, content, cls = "section") {
   return `<section class="${cls}"><div class="section-head"><h2>${title}</h2></div>${content}</section>`;
 }
 
+function guideTable(table) {
+  if (!table) return "";
+  return `<section><h2>Recommended Comparison</h2><div class="table-wrap"><table><thead><tr>${table.columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead><tbody>${table.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>`;
+}
+
+function topicCluster(game, gameGuides) {
+  const pick = (match, fallbackTool) => gameGuides.find(match) || { title: fallbackTool.label, description: fallbackTool.description, url: fallbackTool.url, type: "Tool" };
+  const clusters = [
+    ["Beginner", pick((guide) => guide.slug === "beginner-guide", { label: "Guide Finder", description: "Choose the right starting guide for your current skill level.", url: "/tools/guide-finder" })],
+    ["Builds / Loadouts", pick((guide) => ["best-builds", "loadout-guide", "budget-kit-guide", "pvp-loadout-guide"].includes(guide.slug), { label: "Build Finder", description: "Generate a role-based build or loadout card.", url: "/tools/build-finder" })],
+    ["Tier List", pick((guide) => guide.slug === "tier-list-guide" || guide.type === "Tier List", { label: "Tier List Explorer", description: "Browse editorial rankings by category and tier.", url: "/tools/tier-list-explorer" })],
+    ["Farming / Resource Route", pick((guide) => ["farming-guide", "farms-guide", "money-guide", "mission-farming-guide"].includes(guide.slug), { label: "Farming Route Planner", description: "Plan routes by time, difficulty, and resource type.", url: "/tools/farming-route-planner" })],
+    ["Settings", pick((guide) => guide.slug === "settings-guide" || guide.type === "Settings Guide", { label: "Settings Optimizer", description: "Tune visibility, comfort, and consistency.", url: "/tools/settings-optimizer" })],
+    ["Tools", { title: `${game.name} Tool Stack`, description: "Use checklists, route planning, build picking, and meta testing together.", url: "/tools", type: "Tools" }]
+  ];
+  return `<div class="cluster-grid">${clusters.map(([label, item]) => {
+    const url = item.url || `/games/${game.slug}/${item.slug}`;
+    return `<article class="cluster-card"><span class="badge">${label}</span><h3><a href="${url}" data-link>${escapeHtml(item.title)}</a></h3><p>${escapeHtml(item.description)}</p></article>`;
+  }).join("")}</div>`;
+}
+
 function homePage() {
   const popular = games.slice(0, 24).map(gameCard).join("");
   const latest = guides.slice(0, 8).map(guideCard).join("");
@@ -123,6 +144,7 @@ function gameHub(slug) {
     ${disclaimerBox()}
     ${adSlot("sidebar")}
     ${section("Quick Start", `<div class="tool-strip">${["Beginner", "Build", "Tier List", "Boss", "Farming", "Walkthrough", "PvP"].map((label) => `<a href="/tools/guide-finder" data-link>${label}</a>`).join("")}</div>`)}
+    ${section("Strategy Topic Cluster", topicCluster(game, gameGuides))}
     ${section("Best Guides for New Players", `<div class="guide-grid">${gameGuides.map(guideCard).join("")}</div>`)}
     ${section("Builds and Loadouts", `<p class="prose narrow">Start with a forgiving setup, then use the Build Finder when you know your role, playstyle, and solo or team context.</p><a class="button" href="/tools/build-finder" data-link>Open Build Finder</a>`)}
     ${section("Tier Lists", `<p class="prose narrow">Use editorial rankings as planning context. They are not official data and should be tested with your own patch, account, and team needs.</p><a class="button ghost" href="/tools/tier-list-explorer" data-link>Explore Tier Lists</a>`)}
@@ -149,12 +171,13 @@ function guidePage(gameSlug, guideSlug) {
         <div class="meta-row"><span>Updated ${guide.updatedAt}</span><span>${guide.readingTime}</span><span>${escapeHtml(guide.skillLevel)}</span></div>
         <div class="quick-answer"><h2>Quick Answer</h2><ul>${guide.summary.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul><button class="button ghost" data-copy-summary>Copy Summary</button></div>
         ${guide.sections.map((sec) => `<section id="${slugify(sec.heading)}"><h2>${escapeHtml(sec.heading)}</h2><p>${escapeHtml(sec.body)}</p></section>`).join("")}
+        ${guideTable(guide.table)}
         <section><h2>Key Takeaways</h2><ul>${guide.takeaways.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
         <section><h2>Checklist</h2><ul class="checklist">${guide.checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
         ${adSlot("in-article")}
         <section><h2>Related Tools</h2><div class="tool-grid-cards">${tools.slice(0, 3).map(toolCard).join("")}</div></section>
         <section><h2>Related Guides</h2><div class="guide-grid">${guidesForGame(game.slug).filter((item) => item.id !== guide.id).map(guideCard).join("")}</div></section>
-        ${faq([{ question: `Is this ${game.name} guide official?`, answer: site.disclaimer }, { question: "How should I use this guide?", answer: "Use it as a starter plan, then adjust based on your patch, account, team, and comfort level." }])}
+        ${faq(guide.faq || [{ question: `Is this ${game.name} guide official?`, answer: site.disclaimer }, { question: "How should I use this guide?", answer: "Use it as a starter plan, then adjust based on your patch, account, team, and comfort level." }])}
         ${disclaimerBox()}
       </div>
     </article>

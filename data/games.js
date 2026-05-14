@@ -44,12 +44,15 @@ const names = [
 const guideTypes = ["Beginner Guide", "Best Builds", "Tier List", "Walkthrough", "Farming Routes", "Boss Guide", "Weapons / Characters / Items", "Tips & Tricks", "FAQ"];
 const toolSlugs = ["guide-finder", "build-finder", "tier-list-explorer", "progress-checklist", "farming-route-planner", "loadout-picker", "meta-shift-planner"];
 const extraGuideSlugs = {
+  "genshin-impact": ["tier-list-guide", "settings-guide"],
+  minecraft: ["farms-guide", "settings-guide"],
+  "marvel-rivals": ["tier-list-guide", "settings-guide"],
   "grand-theft-auto-online": ["money-guide", "vehicle-guide"],
-  rust: ["base-design-guide", "pvp-loadout-guide"],
+  rust: ["base-design-guide", "pvp-loadout-guide", "tier-list-guide", "settings-guide"],
   dayz: ["first-hour-survival", "loot-route-guide"],
   "rainbow-six-siege": ["operator-guide", "ranked-setup-guide"],
-  "call-of-duty-warzone": ["loadout-guide", "drop-route-guide"],
-  "escape-from-tarkov": ["extraction-guide", "budget-kit-guide"],
+  "call-of-duty-warzone": ["loadout-guide", "drop-route-guide", "tier-list-guide", "settings-guide"],
+  "escape-from-tarkov": ["extraction-guide", "budget-kit-guide", "tier-list-guide", "settings-guide"],
   "helldivers-2": ["stratagem-guide", "mission-farming-guide"],
   palworld: ["base-building-guide", "pal-breeding-guide"],
   "forza-horizon-6": ["car-tuning-guide", "money-and-progression-guide"],
