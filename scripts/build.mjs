@@ -153,8 +153,11 @@ function shell(path) {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escapeHtml(title)}" />
   <meta name="twitter:description" content="${escapeHtml(description)}" />
+  <meta name="msvalidate.01" content="06348E2D3365CEEC6C11DC7D2A94F86E" />
+  <meta name="google-site-verification" content="9iR16Pj9o70OLRY0a8GwzryOAvnkJQR3gq2AYIfnFQ0" />
   <meta name="theme-color" content="#0b1020" />
   <link rel="stylesheet" href="${base}/styles/styles.css" />
+  <script src="${base}/ads.js" defer></script>
   ${jsonLdFor(path)}
 </head>
 <body>
