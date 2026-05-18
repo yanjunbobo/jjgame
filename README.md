@@ -114,7 +114,7 @@ The build creates:
 - Home page
 - Games index
 - 40 game hub pages
-- 152 starter, topic, and deep guide pages
+- 162 starter, topic, and deep guide pages
 - Tool index and tool pages
 - Tier list and walkthrough aggregation
 - Blog index and article pages

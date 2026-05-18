@@ -40,6 +40,30 @@ const extraGuideKinds = {
     { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Tier List Guide", goal: "evaluate heroes by role pressure, team utility, and ease of value instead of hype", skill: "Beginner to intermediate", time: "15-25 minutes" },
     { slug: "settings-guide", type: "Settings Guide", suffix: "Settings and Hero Practice Guide", goal: "set up aim, awareness, and role practice before ranked or coordinated play", skill: "All skill levels", time: "10-20 minutes" }
   ],
+  valorant: [
+    { slug: "settings-guide", type: "Settings Guide", suffix: "Settings and Aim Routine Guide", goal: "prepare sensitivity, crosshair, audio, and warmup habits for more consistent ranked games", skill: "All skill levels", time: "10-20 minutes" },
+    { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Agent Tier List Guide", goal: "choose agents by map value, role coverage, and team utility instead of popularity alone", skill: "Beginner to intermediate", time: "15-25 minutes" }
+  ],
+  fortnite: [
+    { slug: "settings-guide", type: "Settings Guide", suffix: "Settings and Aim Setup Guide", goal: "tune visibility, building comfort, input feel, and practice rhythm before ranked sessions", skill: "All skill levels", time: "10-20 minutes" },
+    { slug: "loadout-guide", type: "Loadout Guide", suffix: "Loadout Guide", goal: "build a practical inventory plan for early fights, rotations, and endgame pressure", skill: "Beginner to intermediate", time: "10-20 minutes" }
+  ],
+  "honkai-star-rail": [
+    { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Character Tier List Guide", goal: "compare characters by role compression, account value, and team flexibility", skill: "Beginner to intermediate", time: "15-25 minutes" }
+  ],
+  "diablo-4": [
+    { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Build Tier List Guide", goal: "compare builds by leveling speed, farming comfort, boss pressure, and endgame reliability", skill: "Beginner to intermediate", time: "15-25 minutes" },
+    { slug: "settings-guide", type: "Settings Guide", suffix: "Settings and Endgame Prep Guide", goal: "prepare visibility, loot review, dungeon flow, and repeatable farming habits", skill: "All skill levels", time: "10-20 minutes" }
+  ],
+  "path-of-exile-2": [
+    { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Build Tier List Guide", goal: "compare starter builds by budget, mapping comfort, bossing, and mechanical pressure", skill: "Beginner to intermediate", time: "15-25 minutes" }
+  ],
+  "elden-ring": [
+    { slug: "settings-guide", type: "Settings Guide", suffix: "Settings and Boss Practice Guide", goal: "set up controls, camera habits, and practice rules for difficult encounters", skill: "All skill levels", time: "10-20 minutes" }
+  ],
+  "monster-hunter-wilds": [
+    { slug: "tier-list-guide", type: "Tier List", suffix: "Editorial Weapon Tier List Guide", goal: "compare weapons by learning curve, hunt safety, party value, and damage uptime", skill: "Beginner to intermediate", time: "15-25 minutes" }
+  ],
   "grand-theft-auto-online": [
     { slug: "money-guide", type: "Money Guide", suffix: "Money Guide", goal: "compare safe solo income, co-op jobs, and vehicle investment priorities", skill: "All skill levels", time: "15-25 minutes" },
     { slug: "vehicle-guide", type: "Vehicle Guide", suffix: "Vehicle Guide", goal: "choose practical vehicles for missions, travel, racing, and defensive play", skill: "Beginner to intermediate", time: "10-20 minutes" }
@@ -314,6 +338,126 @@ const deepGuideOverrides = {
     takeaways: ["A readable base beats a perfect base early.", "Food and navigation solve most beginner problems.", "Pick one project so the world stays focused."],
     checklist: ["Shelter", "Food", "Bed", "Torches", "Storage", "Home marker"],
     faq: [{ question: "What should I do first in Minecraft?", answer: "Secure wood, food, shelter, light, and a bed. After that, choose one project instead of chasing every possible goal." }]
+  },
+  "valorant/settings-guide": {
+    readingTime: "10 min read",
+    summary: ["Best for: ranked players tuning consistency", "Skill level: all skill levels", "Time required: 10-20 minutes", "Main goal: make aim, audio, crosshair, and warmup repeatable before ranked"],
+    sections: [
+      { heading: "Quick Answer", body: "The best Valorant settings are the ones you can repeat under pressure. Start with clear visibility, a crosshair that does not hide heads, stable sensitivity, useful audio levels, and a warmup routine that matches your role. Do not change sensitivity every bad match. A consistent setup gives you cleaner feedback, which is what ranked improvement needs." },
+      { heading: "Recommended Setup", body: "Use a resolution and graphics profile that keeps frame pacing stable. Keep visual clutter low, enemy highlights easy to read, and audio high enough to catch footsteps without drowning comms. Your crosshair should be visible on bright and dark surfaces, but small enough that it does not cover common head angles. If you are new, choose comfort over novelty." },
+      { heading: "Step-by-Step Strategy", body: "First, lock sensitivity for at least a week. Second, set one crosshair and test it on multiple maps. Third, build a warmup: movement, counter-strafing, calm taps, and a short deathmatch or range routine. Fourth, review whether missed fights are crosshair placement, panic spray, movement, or bad positioning. Only settings problems should lead to settings changes." },
+      { heading: "Common Mistakes", body: "Players often copy pro settings without matching desk space, input habits, or monitor distance. Another mistake is changing crosshair, sensitivity, and graphics at the same time. If performance improves or gets worse, you will not know why. Change one variable and test it across several games." },
+      { heading: "Checklist", body: "Lock sensitivity, choose readable crosshair, reduce visual clutter, check audio balance, warm up movement, test two maps, and avoid changing settings after one emotional loss." }
+    ],
+    table: { columns: ["Setting Area", "Priority", "Why It Matters"], rows: [["Sensitivity", "Very high", "Controls repeatability and panic recovery."], ["Crosshair", "High", "Keeps head placement readable."], ["Audio", "High", "Improves timing and rotations."], ["Graphics clarity", "Medium", "Reduces distraction and visual noise."]] },
+    takeaways: ["Consistency beats constant tweaking.", "Change one setting at a time.", "Warmup should match your ranked role."],
+    checklist: ["Lock sens", "Pick crosshair", "Balance audio", "Reduce clutter", "Warm up movement", "Review missed fights"],
+    faq: [{ question: "Should I copy a pro Valorant sensitivity?", answer: "Use it only as a starting point. Your mouse space, posture, and comfort decide whether it works." }]
+  },
+  "valorant/tier-list-guide": {
+    readingTime: "10 min read",
+    summary: ["Best for: ranked players choosing agents by map and role", "Skill level: beginner to intermediate", "Time required: 15-25 minutes", "Main goal: evaluate agents by utility, map fit, and team coverage instead of popularity"],
+    sections: [
+      { heading: "Quick Answer", body: "A practical Valorant tier list should rank agents by how reliably they create value in real ranked games. Strong agents usually bring flexible utility, clear site impact, or dependable information. But map, role comfort, and team composition matter enough that a lower-ranked comfort pick can outperform a top-tier agent played without purpose." },
+      { heading: "Recommended Setup", body: "Choose agents by role first: controller, initiator, sentinel, duelist, or flex. A team with no smokes or no information usually loses structure even if everyone picked strong individual agents. For solo queue, prioritize agents that can create value without perfect coordination while still helping the team execute or defend." },
+      { heading: "Step-by-Step Strategy", body: "First, check the map. Second, check which roles your team already has. Third, pick the agent that solves the biggest missing job. Fourth, use two or three repeatable utility plans instead of improvising every round. Fifth, after the match, judge whether your pick created space, information, denial, or entry pressure." },
+      { heading: "Common Mistakes", body: "Players often lock duelists because they want control, then leave the team without smokes or information. Another mistake is copying professional compositions without the coordination that makes them work. Ranked value comes from repeatable utility and clear decisions, not just theoretical ceiling." },
+      { heading: "Checklist", body: "Check map, check team roles, fill the missing job, prepare two utility plans, track value created, and expand your pool one role at a time." }
+    ],
+    table: { columns: ["Agent Role", "Ranked Value", "Common Mistake"], rows: [["Controller", "Controls entries and retakes", "Using smokes too late"], ["Initiator", "Creates information", "Flashing without teammate timing"], ["Sentinel", "Locks space", "Never adjusting setup"], ["Duelist", "Starts pressure", "Entrying without utility"]] },
+    takeaways: ["Tier lists need map and role context.", "Solo queue rewards repeatable utility.", "A balanced team is often stronger than five popular picks."],
+    checklist: ["Check map", "Check missing role", "Pick agent", "Prepare utility", "Review value"],
+    faq: [{ question: "Should I always pick the highest-tier Valorant agent?", answer: "No. Pick the highest-value agent you can play well for the map, role, and team composition." }]
+  },
+  "fortnite/loadout-guide": {
+    readingTime: "10 min read",
+    summary: ["Best for: players building a reliable inventory plan", "Skill level: beginner to intermediate", "Time required: 10-20 minutes", "Main goal: balance close fights, mid-range pressure, mobility, healing, and endgame space"],
+    sections: [
+      { heading: "Quick Answer", body: "A strong Fortnite loadout is balanced around decisions, not just weapon rarity. You need a close-range answer, a mid-range pressure option, healing, movement or escape, and one flexible slot for the mode or season. If your inventory cannot handle both a sudden box fight and a forced rotation, it is not ready." },
+      { heading: "Recommended Setup", body: "For most players, use a shotgun or close-range burst option, a stable rifle or precision weapon, shields or healing, mobility, and one flexible utility item. Aggressive players can trade safety for pressure. Newer players should keep more recovery and movement so one mistake does not end the match." },
+      { heading: "Step-by-Step Strategy", body: "After landing, fill the basic roles before chasing upgrades. A lower-rarity weapon in the right slot is better than a rare item that duplicates a job. As the match progresses, replace weak slots by role: better close-range, better range, better mobility, or stronger healing. Before endgame, ask whether you can rotate, survive pressure, and finish a close fight." },
+      { heading: "Common Mistakes", body: "The common trap is carrying too many damage items and no recovery plan. Another is keeping a flashy item that only works when you are already winning. Loadouts should help you recover from bad positions, not just snowball good ones." },
+      { heading: "Checklist", body: "Carry close-range damage, mid-range pressure, healing, mobility, and one flexible slot. Upgrade by role, keep enough ammo, and review whether your inventory solved the fight you actually lost." }
+    ],
+    table: { columns: ["Slot", "Purpose", "Beginner Rule"], rows: [["Close range", "Finish fights", "Keep it simple and fast."], ["Mid range", "Pressure rotations", "Favor control over flash."], ["Healing", "Recover mistakes", "Do not cut it too early."], ["Mobility", "Escape or reposition", "Keep a plan for storm pressure."]] },
+    takeaways: ["Every slot needs a job.", "Balanced inventories survive more scenarios.", "Upgrade by role, not just rarity color."],
+    checklist: ["Close weapon", "Mid-range weapon", "Healing", "Mobility", "Flexible utility", "Ammo check"],
+    faq: [{ question: "Should I carry more weapons or more healing?", answer: "If you are still learning, keep healing or mobility. Extra weapons often duplicate jobs and reduce recovery." }]
+  },
+  "honkai-star-rail/tier-list-guide": {
+    readingTime: "10 min read",
+    summary: ["Best for: players deciding where to invest resources", "Skill level: beginner to intermediate", "Time required: 15-25 minutes", "Main goal: read character rankings by account value, role compression, and team flexibility"],
+    sections: [
+      { heading: "Quick Answer", body: "A useful Honkai: Star Rail tier list should help you decide investment priority, not tell you to ignore your roster. High-value characters usually bring strong team utility, flexible roles, or reliable damage with manageable setup. A lower-ranked character can still be correct if they solve your account's missing role." },
+      { heading: "Recommended Setup", body: "Sort characters by job first: sustain, support, damage, break pressure, follow-up, debuff, or specialist utility. Then compare how many teams they improve. For newer accounts, flexible supports and sustain options often create more progress than another damage dealer competing for the same resources." },
+      { heading: "Step-by-Step Strategy", body: "First, list your two best teams or intended teams. Second, find the missing role. Third, compare characters by how directly they solve that missing role. Fourth, invest only after checking light cone, relic pressure, and team energy needs. Fifth, re-evaluate after a new mode or patch changes what content asks from your roster." },
+      { heading: "Common Mistakes", body: "Many players chase the highest-ranked damage option while ignoring sustain or support bottlenecks. Another mistake is ranking characters without considering relic quality. A character with easy gearing can outperform a stronger option that needs perfect setup on your account." },
+      { heading: "Checklist", body: "Identify missing role, check team fit, compare resource cost, test current content, then invest. Keep rankings as context, not a replacement for account planning." }
+    ],
+    table: { columns: ["Tier Signal", "What It Means", "Investment Note"], rows: [["S", "Broad account value", "Usually safe if role is missing."], ["A", "Strong with team support", "Invest when synergy is ready."], ["B", "Useful but narrower", "Good if it solves your specific gap."], ["C", "Specialist or high cost", "Delay unless you have a clear plan."]] },
+    takeaways: ["Rank by role value, not hype.", "Supports and sustain can be higher account value than damage.", "Resource cost matters as much as ceiling."],
+    checklist: ["List teams", "Find missing role", "Check relic pressure", "Compare utility", "Invest with purpose"],
+    faq: [{ question: "Are these Star Rail tier rankings official?", answer: "No. They are editorial planning guidance and should be tested against your account and current content." }]
+  },
+  "diablo-4/best-builds": {
+    readingTime: "11 min read",
+    summary: ["Best for: players choosing a practical class setup", "Skill level: beginner to intermediate", "Time required: 20-30 minutes", "Main goal: choose a build by leveling speed, farming comfort, boss pressure, and gear dependency"],
+    sections: [
+      { heading: "Quick Answer", body: "The best Diablo 4 build is the one that clears your current activity smoothly with gear you can actually obtain. Leveling builds should be simple, mobile, and resource-stable. Endgame builds can be more specialized, but they need the right aspects, defenses, and resource loop. Do not copy a perfect endgame planner if your character is still missing the pieces that make it function." },
+      { heading: "Recommended Setup", body: "Choose a build by activity: campaign leveling, nightmare dungeons, bossing, speed farming, or pushing. For early characters, prioritize area damage, resource reliability, survivability, and movement. For endgame, check whether the build requires specific uniques, glyph levels, tempering, or cooldown breakpoints before committing." },
+      { heading: "Step-by-Step Strategy", body: "First, identify the content you are playing today. Second, choose a skill package that handles that content without constant downtime. Third, lock your core damage and defensive layers. Fourth, upgrade aspects and gear in the order that fixes the biggest weakness. Fifth, save advanced variants until the base version feels stable." },
+      { heading: "Common Mistakes", body: "Players often switch builds too often and never finish the support pieces. Another mistake is stacking damage while ignoring defenses, then blaming the build when higher-tier content punishes mistakes. If you die before your damage matters, the build needs survival before more offense." },
+      { heading: "Checklist", body: "Pick activity, choose core skill, confirm resource loop, add defenses, upgrade aspects, test a dungeon, then decide whether to push or farm." }
+    ],
+    table: { columns: ["Build Goal", "Priority", "Watch Out For"], rows: [["Leveling", "Simple damage and mobility", "Gear-heavy setups"], ["Farming", "Speed and sustain", "Fragile glass cannon choices"], ["Bossing", "Single-target pressure", "Weak resource loop"], ["Pushing", "Defense layers", "Ignoring crowd control risk"]] },
+    takeaways: ["Build for today's content first.", "Gear dependency decides whether a build is practical.", "Defense is part of damage uptime."],
+    checklist: ["Pick content", "Check resource", "Add defense", "Upgrade aspects", "Test dungeon", "Adjust one weakness"],
+    faq: [{ question: "Should I switch to an endgame Diablo 4 build early?", answer: "Only when you have the core pieces. A leveling build is often faster until the endgame loop is available." }]
+  },
+  "path-of-exile-2/best-builds": {
+    readingTime: "11 min read",
+    summary: ["Best for: players choosing a starter build", "Skill level: beginner to intermediate", "Time required: 20-30 minutes", "Main goal: pick a build by budget, defense, mapping comfort, and boss learning curve"],
+    sections: [
+      { heading: "Quick Answer", body: "A good Path of Exile 2 starter build should function before expensive gear, explain its defensive plan, and scale without forcing constant respecs. The strongest-looking build is not always the best starter. Choose something that can clear maps, recover from mistakes, and teach boss patterns without needing rare items immediately." },
+      { heading: "Recommended Setup", body: "Evaluate starter builds by four questions: does it clear packs comfortably, can it handle bosses without perfect play, does it have a clear defense layer, and can upgrades be acquired gradually? Builds with smooth early damage and simple defenses are usually better for first characters than complex late-game scaling plans." },
+      { heading: "Step-by-Step Strategy", body: "First, pick the skill fantasy you actually enjoy. Second, check whether the build has a leveling path. Third, identify required gear and optional gear separately. Fourth, test whether deaths come from missing defenses, bad positioning, or low damage. Fifth, upgrade the bottleneck instead of copying a full endgame setup all at once." },
+      { heading: "Common Mistakes", body: "New players often pick a build because the final showcase looks powerful, then discover the early version is awkward. Another mistake is ignoring defenses until mapping becomes frustrating. If a build cannot explain how it survives, treat it as incomplete." },
+      { heading: "Checklist", body: "Choose skill, check leveling path, identify required gear, confirm defense layer, test mapping, test bossing, upgrade gradually." }
+    ],
+    table: { columns: ["Build Type", "Good For", "Risk"], rows: [["Budget starter", "First character", "Lower ceiling"], ["Boss learner", "Pattern practice", "Slower mapping"], ["Mapper", "Currency farming", "Boss pressure may lag"], ["High scaling", "Long-term investment", "Weak before gear"]] },
+    takeaways: ["Starter builds need a budget path.", "Defense must be explained, not assumed.", "Upgrade the bottleneck, not the whole build."],
+    checklist: ["Pick skill", "Check budget", "Check defense", "Map test", "Boss test", "Upgrade gradually"],
+    faq: [{ question: "What makes a PoE 2 build beginner-friendly?", answer: "A clear leveling path, replaceable gear, understandable defenses, and room to improve without constant rebuilding." }]
+  },
+  "elden-ring/best-builds": {
+    readingTime: "10 min read",
+    summary: ["Best for: players choosing a forgiving build path", "Skill level: beginner to intermediate", "Time required: 20-30 minutes", "Main goal: pick a build that balances damage, survivability, stat clarity, and boss learning"],
+    sections: [
+      { heading: "Quick Answer", body: "The best Elden Ring build for most players is not the highest damage setup. It is the one that lets you survive long enough to learn bosses while still dealing reliable damage. Pick one main damage stat, enough vigor, a weapon moveset you can control, and a simple upgrade path. A clear build beats a scattered stat sheet." },
+      { heading: "Recommended Setup", body: "Newer players should prioritize vigor, weapon upgrades, and a damage stat that matches their chosen weapon. Strength and dexterity builds are straightforward, intelligence and faith builds add range or utility, and hybrid builds should wait until you understand stat scaling. Shields, summons, status effects, and ranged tools are valid parts of a practical build." },
+      { heading: "Step-by-Step Strategy", body: "First, choose the weapon feel you like: fast, heavy, ranged, magic, or status. Second, commit to the matching stat. Third, keep vigor healthy. Fourth, upgrade the weapon before obsessing over tiny stat gains. Fifth, adjust talismans and armor around the boss problem you are facing." },
+      { heading: "Common Mistakes", body: "Players often spread stats too thin because every new weapon looks tempting. Another mistake is underleveling vigor and blaming the build when mistakes become instant deaths. Damage matters, but surviving one more hit often creates more real progress." },
+      { heading: "Checklist", body: "Choose weapon feel, choose main stat, level vigor, upgrade weapon, test boss, adjust talismans, avoid stat drift." }
+    ],
+    table: { columns: ["Build Style", "Best For", "Beginner Note"], rows: [["Strength", "Stagger and simple scaling", "Slower timing but clear upgrades."], ["Dexterity", "Fast weapons", "Rewards positioning."], ["Intelligence", "Range and burst", "Needs FP planning."], ["Faith", "Utility and sustain", "Flexible but stat hungry."]] },
+    takeaways: ["Vigor is part of the build.", "Commit to one main damage plan.", "Weapon upgrades matter more than tiny stat changes early."],
+    checklist: ["Pick weapon", "Pick stat", "Level vigor", "Upgrade weapon", "Tune talismans", "Practice boss"],
+    faq: [{ question: "What is the easiest Elden Ring build?", answer: "The easiest build is usually a durable setup with clear weapon scaling, enough vigor, and tools that let you learn boss patterns safely." }]
+  },
+  "monster-hunter-wilds/farming-guide": {
+    readingTime: "10 min read",
+    summary: ["Best for: hunters planning efficient material routes", "Skill level: all skill levels", "Time required: 15-30 minutes", "Main goal: farm materials without wasting hunts on unfocused objectives"],
+    sections: [
+      { heading: "Quick Answer", body: "Efficient Monster Hunter Wilds farming starts with the exact material, not the monster name alone. Confirm the part, break condition, capture or carve preference, and whether you need a common drop or a rare one. A good route reduces wasted hunts by targeting the right part and ending the hunt cleanly." },
+      { heading: "Recommended Setup", body: "Bring the weapon you can use safely against the target, then add item support for the part you need: traps, bombs, sharpness, status, or survivability. Multiplayer can speed farming only if everyone understands the target part. Solo can be more consistent when you need specific breaks." },
+      { heading: "Step-by-Step Strategy", body: "First, identify the material and source. Second, choose whether the goal is break, capture, carve, or quest reward. Third, select a hunt you can repeat without carting. Fourth, focus the correct part before chasing damage. Fifth, stop after the material goal instead of turning every hunt into a full optimization test." },
+      { heading: "Common Mistakes", body: "Many players farm the right monster but ignore the right part. Another mistake is using the highest damage weapon even when it makes part targeting awkward. Farming values consistency. A slightly slower hunt with reliable breaks often beats a faster hunt that misses the target material." },
+      { heading: "Checklist", body: "Name material, check source, choose hunt, pack part-break tools, focus target part, capture or carve as needed, record the route if it works." }
+    ],
+    table: { columns: ["Farm Goal", "Route Focus", "Mistake to Avoid"], rows: [["Common material", "Fast repeat hunts", "Overpreparing"], ["Part break", "Targeted damage", "Killing before break"], ["Rare drop", "Consistent clear", "Changing route every hunt"], ["Group farm", "Shared target call", "Everyone hitting random parts"]] },
+    takeaways: ["Farm the material condition, not just the monster.", "Reliable part breaks beat messy speed.", "Use the route that you can repeat calmly."],
+    checklist: ["Material named", "Source checked", "Part target set", "Items packed", "Route repeated", "Result noted"],
+    faq: [{ question: "Is faster always better for Monster Hunter farming?", answer: "No. If a route misses the required part break or condition, it can be faster and still worse." }]
   }
 };
 
