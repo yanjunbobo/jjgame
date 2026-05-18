@@ -10,6 +10,7 @@ import { tierLists } from "../src/data/tierLists.js";
 const siteUrl = process.env.SITE_URL || "https://game.xxym8.com";
 const outDir = "dist";
 const base = (process.env.SITE_BASE || "").replace(/\/$/, "");
+const lastmod = process.env.SITE_LASTMOD || "2026-05-18";
 
 const staticRoutes = [
   "/",
@@ -217,7 +218,7 @@ for (const route of staticRoutes) await writeRoute(route);
 await writeFile(join(outDir, "404.html"), shell("/404"), "utf8");
 await writeFile(join(outDir, "CNAME"), "game.xxym8.com\n", "utf8");
 await writeFile(join(outDir, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`, "utf8");
-await writeFile(join(outDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${staticRoutes.map((route) => `  <url><loc>${siteUrl}${route === "/" ? "" : route}</loc><lastmod>2026-05-14</lastmod><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`).join("\n")}\n</urlset>\n`, "utf8");
+await writeFile(join(outDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${staticRoutes.map((route) => `  <url><loc>${siteUrl}${route === "/" ? "" : route}</loc><lastmod>${lastmod}</lastmod><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`).join("\n")}\n</urlset>\n`, "utf8");
 await writeFile(join(outDir, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>MetaQuestly Blog</title><link>${siteUrl}/blog</link><description>Game guide strategy notes from MetaQuestly.</description>${blogPosts.map((post) => `<item><title>${escapeHtml(post.title)}</title><link>${siteUrl}/blog/${post.slug}</link><description>${escapeHtml(post.description)}</description></item>`).join("")}</channel></rss>`, "utf8");
 const builtFiles = await listFiles(outDir);
 console.log(`Built ${staticRoutes.length} routes and ${builtFiles.length} files into ${outDir}.`);

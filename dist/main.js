@@ -64,6 +64,11 @@ function guideTable(table) {
   return `<section><h2>Recommended Comparison</h2><div class="table-wrap"><table><thead><tr>${table.columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead><tbody>${table.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>`;
 }
 
+function guideInternalLinks(guide) {
+  if (!guide.internalLinks?.length) return "";
+  return `<section><h2>Next Steps</h2><div class="internal-link-grid">${guide.internalLinks.map((item) => `<a class="internal-link-card" href="${item.url}" data-link><strong>${escapeHtml(item.label)}</strong><span>${escapeHtml(item.note)}</span></a>`).join("")}</div></section>`;
+}
+
 function topicCluster(game, gameGuides) {
   const pick = (match, fallbackTool) => gameGuides.find(match) || { title: fallbackTool.label, description: fallbackTool.description, url: fallbackTool.url, type: "Tool" };
   const clusters = [
@@ -175,6 +180,7 @@ function guidePage(gameSlug, guideSlug) {
         <section><h2>Key Takeaways</h2><ul>${guide.takeaways.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
         <section><h2>Checklist</h2><ul class="checklist">${guide.checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
         ${adSlot("in-article")}
+        ${guideInternalLinks(guide)}
         <section><h2>Related Tools</h2><div class="tool-grid-cards">${tools.slice(0, 3).map(toolCard).join("")}</div></section>
         <section><h2>Related Guides</h2><div class="guide-grid">${guidesForGame(game.slug).filter((item) => item.id !== guide.id).map(guideCard).join("")}</div></section>
         ${faq(guide.faq || [{ question: `Is this ${game.name} guide official?`, answer: site.disclaimer }, { question: "How should I use this guide?", answer: "Use it as a starter plan, then adjust based on your patch, account, team, and comfort level." }])}

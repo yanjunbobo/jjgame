@@ -281,6 +281,21 @@ th {
 }
 td { color: var(--muted); }
 .checklist li { margin-bottom: 8px; }
+.internal-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.internal-link-card {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.internal-link-card strong { color: var(--text); }
+.internal-link-card span { color: var(--muted); font-size: 14px; }
 
 .filters, .tool-grid {
   display: grid;
@@ -291,6 +306,26 @@ td { color: var(--muted); }
 .tool-results { margin-top: 18px; }
 .result-card { padding: 18px; }
 .result-card ul, .result-card ol { padding-left: 22px; }
+.result-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 16px;
+  align-items: start;
+}
+.mini-stat {
+  display: grid;
+  gap: 4px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.mini-stat span { color: var(--muted); font-size: 13px; }
+.mini-stat strong { color: var(--text); }
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
 .tier { display: grid; gap: 8px; margin: 12px 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; }
 .tier div { display: grid; gap: 2px; }
 .tier span { color: var(--muted); }
@@ -355,8 +390,9 @@ summary { cursor: pointer; font-weight: 800; }
   }
   .mobile-nav a { padding: 10px; color: var(--muted); }
   .hero, .game-hero, .article-layout, .site-footer { grid-template-columns: 1fr; }
+  .result-layout { grid-template-columns: 1fr; }
   .toc { position: static; }
-  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid, .internal-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filters, .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -365,7 +401,7 @@ summary { cursor: pointer; font-weight: 800; }
   .hero, .page-hero, .game-hero, .section, .filters, .breadcrumbs, .article-layout, .tool-interface, .notice, .ad-slot, .affiliate-box { width: min(100% - 22px, 1180px); }
   .hero-copy, .quick-panel, .page-hero, .game-hero > div, .article { padding: 18px; }
   .hero h1, .page-hero h1, .game-hero h1, .article h1 { font-size: 34px; }
-  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid, .filters, .tool-grid { grid-template-columns: 1fr; }
+  .card-grid, .guide-grid, .tool-grid-cards, .cluster-grid, .link-grid, .internal-link-grid, .filters, .tool-grid { grid-template-columns: 1fr; }
   .overview-card dl { grid-template-columns: 1fr; }
   .cta-row .button { width: 100%; }
 }

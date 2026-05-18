@@ -53,6 +53,21 @@ function findGame(name) {
   return games.find((game) => game.name === name) || games[0];
 }
 
+function guidePath(game, preferredSlug = "best-builds") {
+  const guide = guides.find((item) => item.gameSlug === game.slug && item.slug === preferredSlug) || guides.find((item) => item.gameSlug === game.slug);
+  return guide ? `/games/${guide.gameSlug}/${guide.slug}` : `/games/${game.slug}`;
+}
+
+const rolePlans = {
+  DPS: { priority: "damage uptime with a safe recovery option", flex: "one defensive or mobility slot", test: "Track whether deaths happen before your damage matters." },
+  Tank: { priority: "space creation and survival windows", flex: "one peel or escape tool", test: "Review whether teammates can safely follow your engage." },
+  Support: { priority: "uptime, rescue value, and team consistency", flex: "one self-protection option", test: "Check whether your utility appears before fights are already lost." },
+  Controller: { priority: "information denial, space control, and timing", flex: "one fast reset option", test: "Watch whether your control changes enemy movement." },
+  Duelist: { priority: "clean entry pressure and fast recoveries", flex: "one disengage or sustain option", test: "Measure whether your first action creates space or only creates risk." },
+  Flex: { priority: "role coverage without over-specializing", flex: "one swap-ready utility slot", test: "Ask which missing team job you solved this session." },
+  Farmer: { priority: "speed, safety, and repeatable resource loops", flex: "one inventory or route comfort option", test: "Compare reward consistency, not only best-case speed." }
+};
+
 function list(items) {
   return items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
@@ -151,12 +166,13 @@ function resultFor(slug, game, data) {
     return `<div class="result-card"><h3>Recommended next read</h3><p>${escapeHtml(game.name)} players asking for ${escapeHtml(data.goal)} should start with a practical, low-friction guide.</p><a class="button" href="/games/${guide.gameSlug}/${guide.slug}" data-link>${escapeHtml(guide.title)}</a><a class="button ghost" href="/tools/progress-checklist" data-link>Track Progress</a></div>`;
   }
   if (slug === "build-finder") {
+    const rolePlan = rolePlans[data.role] || rolePlans.Flex;
     if (profile.build) {
       const text = `${game.name}: ${profile.build.title} - ${profile.build.core.join(", ")}`;
-      return `<div class="result-card"><h3>${escapeHtml(profile.build.title)}</h3><ul>${list(profile.build.core)}</ul><p><strong>Pros:</strong> ${escapeHtml(profile.build.pros)}</p><p><strong>Weakness:</strong> ${escapeHtml(profile.build.cons)}</p><button class="button ghost" data-copy="${escapeHtml(text)}">Copy Build</button><a class="button" href="/games/${game.slug}/best-builds" data-link>Open Build Guide</a></div>`;
+      return `<div class="result-card"><h3>${escapeHtml(profile.build.title)}</h3><div class="result-layout"><div><h4>Core package</h4><ul>${list(profile.build.core)}</ul><p><strong>Pros:</strong> ${escapeHtml(profile.build.pros)}</p><p><strong>Weakness:</strong> ${escapeHtml(profile.build.cons)}</p></div><div><h4>Your selected plan</h4><div class="mini-stat"><span>Role priority</span><strong>${escapeHtml(rolePlan.priority)}</strong></div><div class="mini-stat"><span>Flex slot</span><strong>${escapeHtml(rolePlan.flex)}</strong></div><div class="mini-stat"><span>Test rule</span><strong>${escapeHtml(rolePlan.test)}</strong></div></div></div><div class="result-actions"><button class="button ghost" data-copy="${escapeHtml(text)}">Copy Build</button><a class="button" href="${guidePath(game, "best-builds")}" data-link>Open Build Guide</a><a class="button ghost" href="/tools/progress-checklist" data-link>Track Setup</a></div></div>`;
     }
     const text = `${game.name} ${data.role} ${data.playstyle} ${data.mode} starter build`;
-    return `<div class="result-card"><h3>${escapeHtml(data.role)} ${escapeHtml(data.playstyle)} Build</h3><ul><li>Core: stable opener, safe recovery option, flexible utility slot.</li><li>Pros: readable, low-risk, easy to adjust.</li><li>Cons: lower ceiling than specialized advanced setups.</li><li>Difficulty: ${escapeHtml(data.skill)}</li></ul><button class="button ghost" data-copy="${escapeHtml(text)}">Copy Build</button><a class="button" href="/games/${game.slug}/best-builds" data-link>Open Build Guide</a></div>`;
+    return `<div class="result-card"><h3>${escapeHtml(data.role)} ${escapeHtml(data.playstyle)} Build</h3><div class="result-layout"><div><h4>Starter package</h4><ul><li>Core: stable opener, safe recovery option, flexible utility slot.</li><li>Mode fit: ${escapeHtml(data.mode)} plan with ${escapeHtml(data.skill)} execution pressure.</li><li>Pros: readable, low-risk, easy to adjust.</li><li>Cons: lower ceiling than specialized advanced setups.</li></ul></div><div><h4>Decision notes</h4><div class="mini-stat"><span>Role priority</span><strong>${escapeHtml(rolePlan.priority)}</strong></div><div class="mini-stat"><span>Flex slot</span><strong>${escapeHtml(rolePlan.flex)}</strong></div><div class="mini-stat"><span>Test rule</span><strong>${escapeHtml(rolePlan.test)}</strong></div></div></div><div class="result-actions"><button class="button ghost" data-copy="${escapeHtml(text)}">Copy Build</button><a class="button" href="${guidePath(game, "best-builds")}" data-link>Open Build Guide</a><a class="button ghost" href="/tools/tier-list-explorer" data-link>Check Tier Context</a></div></div>`;
   }
   if (slug === "tier-list-explorer") {
     if (profile.tiers) {

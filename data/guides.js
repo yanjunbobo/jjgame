@@ -182,14 +182,26 @@ const deepGuideOverrides = {
       { heading: "Quick Answer", body: "The safest Warzone loadout starts with role clarity. Pick one primary that covers your most common fight distance, one secondary or utility slot that protects your weakness, and perks that keep you alive during rotations. Do not build around perfect recoil charts alone. A loadout you can control under pressure is better than a theoretical top weapon you cannot track with." },
       { heading: "Recommended Setup", body: "For most squads, build around a stable mid-range rifle or LMG, a close-range secondary, smoke or mobility utility, and a recovery-focused perk package. Solo players should value information, escape tools, and simple recoil. Aggressive entry players can trade some comfort for faster handling, but only if the squad is ready to follow the push." },
       { heading: "Step-by-Step Strategy", body: "Start by choosing the range where you lose the most fights. If you die while rotating, improve mid-range control and smoke usage. If you lose buildings, improve sprint-to-fire speed and close-range consistency. Test the loadout for three matches without changing attachments. After that, change one part: optic, barrel, magazine, or secondary. Keep the version that reduces mistakes, not just the one that looks stronger on paper." },
+      { heading: "Role-Based Loadout Paths", body: "Solo players should build for escape, information, and clean recoil because no teammate can trade every mistake. Duo and trio players can specialize more: one player handles mid-range pressure, one holds close-range rooms, and one carries the safer rotation utility. If you are the entry player, do not also carry the squad's only recovery plan. If you are the support player, choose attachments and equipment that help teammates cross space, reset armor, and finish downs." },
       { heading: "Common Mistakes", body: "Many players copy a creator build without checking input method, squad size, or map flow. Another common mistake is running two weapons that solve the same range while leaving one obvious weakness. If both guns are mid-range comfort picks, you may feel good in open fights but collapse indoors. If both are aggressive, rotations become stressful." },
       { heading: "Advanced Tips", body: "Build one safe class and one pressure class. The safe class handles ranked, late circles, and uncertain teammates. The pressure class is for confident drops, bounty chains, or games where your squad is already ahead. Label your classes by job rather than weapon name so you can switch faster: rotate, entry, support, regain, sniper cover." },
+      { heading: "How to Test a Loadout", body: "Run the same class for three full matches and review only three outcomes: how often recoil cost you a down, how often your utility saved a rotation, and how often your secondary solved the weak range. If the class fails one category repeatedly, change one slot. Avoid rebuilding the entire class after one bad lobby because that hides the real problem." },
       { heading: "Checklist", body: "Before queueing, confirm your role, your main fight range, your weak range, and your utility plan. If you cannot explain when to use the loadout, it is not ready yet. Keep one slot flexible for map changes, squad strategy, or patch-driven comfort adjustments." }
     ],
     table: { columns: ["Role", "Primary Need", "Utility Priority"], rows: [["Solo", "Recoil comfort", "Escape and information"], ["Entry", "Fast handling", "Flash, smoke, or mobility"], ["Support", "Mid-range stability", "Ammo and revive cover"], ["Ranked squad", "Consistency", "Rotation safety"]] },
     takeaways: ["Build by role before copying a trend.", "Test one loadout for several matches before changing attachments.", "A reliable class needs a plan for its weak range."],
     checklist: ["Choose role", "Choose main range", "Cover weak range", "Pick utility", "Test three matches", "Adjust one attachment only"],
-    faq: [{ question: "Should I always use the current meta weapon?", answer: "No. Use meta discussion as a starting point, then test whether the weapon fits your aim, squad role, and fight range." }]
+    internalLinks: [
+      { label: "Warzone drop route guide", url: "/games/call-of-duty-warzone/drop-route-guide", note: "Pair your class with a safer opening route." },
+      { label: "Build Finder", url: "/tools/build-finder", note: "Generate a role-based loadout card." },
+      { label: "Loadout Picker", url: "/tools/loadout-picker", note: "Choose a range and squad role before queueing." }
+    ],
+    faq: [
+      { question: "Should I always use the current meta weapon?", answer: "No. Use meta discussion as a starting point, then test whether the weapon fits your aim, squad role, and fight range." },
+      { question: "How many loadouts should I keep ready?", answer: "Keep one safe class, one pressure class, and one regain class. More than that often creates decision clutter unless your squad has defined roles." },
+      { question: "Is recoil control more important than damage?", answer: "For most players, yes. Damage only matters if you can keep shots on target during real rotations, pressure, and visual clutter." },
+      { question: "Should solo and squad loadouts be different?", answer: "Usually. Solo classes need more self-rescue and information, while squad classes can specialize around entry, support, or rotation jobs." }
+    ]
   },
   "escape-from-tarkov/extraction-guide": {
     readingTime: "12 min read",
@@ -198,14 +210,26 @@ const deepGuideOverrides = {
       { heading: "Quick Answer", body: "A beginner Tarkov raid should be planned backward from extraction. Choose one map, learn two safe exits, enter with a cheap kit, and leave before your bag turns into a reason to panic. The objective is not to loot every room. The objective is to survive enough raids that your map knowledge becomes useful." },
       { heading: "Recommended Setup", body: "Bring a budget weapon you can afford to lose, basic meds, a headset if possible, and a simple backpack. Avoid overloading your kit with gear you are afraid to use. Fear makes new players freeze in bad positions. A modest kit encourages movement, listening, and extraction practice." },
       { heading: "Step-by-Step Strategy", body: "Before loading in, identify your likely extracts and a fallback path. Once in raid, get your bearings first, then move toward a low-contest loot route. Stop sprinting near buildings, listen before entering rooms, and leave after one meaningful win: a quest item, a full bag, a weapon upgrade, or simply better map confidence." },
+      { heading: "Beginner Extraction Route Rules", body: "Use a three-stop route: spawn orientation, one loot pocket, then extraction. That sounds conservative, but it gives new players more real progress than wandering until the raid becomes noisy. If the first pocket is contested, rotate to the fallback instead of forcing the fight. If the extract is hot, wait outside the obvious path and listen before crossing the last open area." },
       { heading: "Common Mistakes", body: "New players often stay too long because they think extraction without a huge haul is wasted time. It is not. Surviving with moderate loot teaches more than dying with a full bag. Another mistake is following gunfire just because it sounds close. If your goal is learning extracts, every optional fight is a tax." },
       { heading: "Advanced Tips", body: "Use mental checkpoints. If you have meds, ammo, and stamina, keep moving. If you lose one of those, simplify the raid and leave. When you hear fighting near your extract, wait, rotate, or use the fallback. Tarkov rewards patience more than panic, especially when your map knowledge is still forming." },
+      { heading: "What to Review After Each Raid", body: "Do not review everything at once. Write down spawn, route, first danger sound, extraction choice, and why the raid ended. If you died near the same area twice, mark it as a red zone and route around it for a few sessions. If you extracted twice in a row, add one small objective next time instead of doubling the whole plan." },
       { heading: "Checklist", body: "Pick one map, learn two extracts, bring a kit you can lose, define one raid goal, leave after completing it, and write down what confused you. Repeat until extracts feel boring. Boring extracts are good; they mean you are finally making the map smaller." }
     ],
     table: { columns: ["Raid Phase", "Priority", "Beginner Rule"], rows: [["Spawn", "Orient", "Do not sprint blindly."], ["Loot", "Limit greed", "Leave after one clear win."], ["Contact", "Survive", "Avoid optional fights."], ["Extract", "Commit", "Use fallback if sound is bad."]] },
     takeaways: ["Plan backward from extraction.", "Cheap kits help you learn faster.", "A survived small raid is better than a lost perfect raid."],
     checklist: ["Choose one map", "Check two extracts", "Set one objective", "Move quietly near buildings", "Leave after a meaningful win"],
-    faq: [{ question: "Which map should a beginner learn first?", answer: "Pick one map and stay with it long enough to learn spawns, exits, and safe movement. The best first map is the one you will repeat calmly." }]
+    internalLinks: [
+      { label: "Tarkov budget kit guide", url: "/games/escape-from-tarkov/budget-kit-guide", note: "Build a raid kit that matches the extraction plan." },
+      { label: "Progress Checklist", url: "/tools/progress-checklist", note: "Save extraction practice milestones locally." },
+      { label: "Extraction guides tag", url: "/tags/extraction-guides", note: "Browse extraction-focused game hubs." }
+    ],
+    faq: [
+      { question: "Which map should a beginner learn first?", answer: "Pick one map and stay with it long enough to learn spawns, exits, and safe movement. The best first map is the one you will repeat calmly." },
+      { question: "When should I extract from a beginner raid?", answer: "Extract after one meaningful win: a quest item, useful loot, a learned route, or simply reaching a known exit without panic." },
+      { question: "Should I avoid every fight while learning?", answer: "Avoid optional fights when the raid goal is extraction practice. Take fights only when they block the route or teach a specific skill you planned to test." },
+      { question: "Is expensive gear better for learning extracts?", answer: "Not usually. Replaceable gear keeps fear low, which helps you move, listen, and repeat routes more consistently." }
+    ]
   },
   "genshin-impact/best-builds": {
     readingTime: "11 min read",
@@ -214,14 +238,26 @@ const deepGuideOverrides = {
       { heading: "Quick Answer", body: "The best Genshin Impact build is the one that makes the character's job consistent with the least wasted resin. Start with role: on-field damage, off-field damage, support, healer, shielder, or reaction enabler. Then solve energy and rotation comfort before chasing perfect substats. A build that bursts on time and supports the team usually beats a prettier stat page that breaks the rotation." },
       { heading: "Recommended Setup", body: "For new accounts, prioritize weapon usability, main stats, and set bonuses that work across multiple characters. Do not farm a narrow domain for weeks if a flexible set can support several teams. For damage dealers, choose the correct main stats first. For supports, energy recharge and uptime often matter more than personal damage. For healers and shielders, build enough survivability before adding damage." },
       { heading: "Step-by-Step Strategy", body: "First, write the character's job in one sentence. Second, choose a weapon that helps that job. Third, equip the right main stats even if substats are imperfect. Fourth, test whether the burst or skill is ready when the rotation needs it. Fifth, improve substats only after the team functions. This avoids the common trap of optimizing a character who still cannot perform their basic role." },
+      { heading: "Build Priority by Account Stage", body: "Early accounts should favor flexible support pieces, correct main stats, and weapons that several characters can use. Midgame accounts can start improving key damage dealers, but only after the team has reliable energy and survival. Late-game accounts can chase better substats, alternate sets, and rotation-specific optimizations. The important part is matching the build target to the account stage instead of farming like every character is already endgame-ready." },
       { heading: "Common Mistakes", body: "The most common mistake is treating every character like a main damage dealer. Another is farming perfect artifacts too early. Resin is limited, so account-wide efficiency matters. If a support needs energy but you give them only damage stats, the whole team slows down. If an on-field carry cannot trigger the intended reactions, the build is missing the point." },
       { heading: "Advanced Tips", body: "Once the team works, optimize around rotation timing. A slightly lower damage build can be better if it shortens downtime or makes reactions easier to trigger. Keep alternate pieces for different team roles. Many characters can shift between support and damage depending on team needs, but only if you save practical artifacts instead of deleting everything that is not perfect." },
+      { heading: "Resin-Safe Upgrade Order", body: "Spend resin on the upgrade that gives the most certain improvement first. Character levels, weapon levels, and important talents are usually easier to finish than artifact perfection. Once the role works, use artifact farming to improve consistency rather than chasing a single perfect screenshot. If two characters need the same domain, that domain becomes more efficient for the account." },
       { heading: "Checklist", body: "Confirm role, weapon purpose, main stats, energy comfort, reaction plan, and rotation timing. Upgrade only after the team works in real fights. If a build looks strong but feels awkward, test a more comfortable energy or support setup before spending more resin." }
     ],
     table: { columns: ["Role", "First Priority", "Common Trap"], rows: [["On-field DPS", "Main stats and team buffs", "Ignoring reaction setup"], ["Off-field DPS", "Uptime and energy", "Building damage with no burst consistency"], ["Support", "Team utility", "Chasing personal damage too early"], ["Healer/Shielder", "Reliability", "Underbuilding survival stats"]] },
     takeaways: ["Build around role before stat screenshots.", "Energy comfort is a real build stat.", "Farm flexible upgrades before narrow perfection."],
     checklist: ["Define role", "Pick weapon by job", "Fix main stats", "Check energy uptime", "Test rotation", "Upgrade substats last"],
-    faq: [{ question: "Should I farm perfect artifacts first?", answer: "No. Get correct main stats and a functioning team first, then improve substats over time." }]
+    internalLinks: [
+      { label: "Genshin farming guide", url: "/games/genshin-impact/farming-guide", note: "Plan resin around the build bottleneck." },
+      { label: "Genshin tier list guide", url: "/games/genshin-impact/tier-list-guide", note: "Compare role value before spending resources." },
+      { label: "Build Finder", url: "/tools/build-finder", note: "Generate a role-first build card." }
+    ],
+    faq: [
+      { question: "Should I farm perfect artifacts first?", answer: "No. Get correct main stats and a functioning team first, then improve substats over time." },
+      { question: "What should I build first on a new account?", answer: "Build one reliable team core first: a damage plan, a support plan, survival, and enough energy to repeat the rotation." },
+      { question: "Are flexible artifact sets worth using?", answer: "Yes. Flexible sets are often better early because they help several characters while your roster and teams are still changing." },
+      { question: "How do I know a support build is working?", answer: "A support build is working when its buff, shield, heal, off-field damage, or energy job appears when the team rotation needs it." }
+    ]
   },
   "marvel-rivals/tier-list-guide": {
     readingTime: "10 min read",
@@ -230,14 +266,26 @@ const deepGuideOverrides = {
       { heading: "Quick Answer", body: "A useful Marvel Rivals tier list should rank practical value, not just highlight popularity. Strong heroes usually bring reliable damage, survivability, initiation, protection, or team utility without needing perfect coordination. Treat this as an editorial framework: your rank, aim, map, and team composition can move a hero up or down." },
       { heading: "Recommended Setup", body: "Start by choosing your role need. If your team lacks pressure, pick a hero who can start fights or secure damage safely. If your team collapses, pick protection, healing, or control. If the match is chaotic, comfort and survival often outperform a high-ceiling hero that needs clean setups." },
       { heading: "Step-by-Step Strategy", body: "First, identify why your team is losing fights: no engage, no sustain, no burst, no peel, or no objective control. Second, choose a hero that solves that problem. Third, give the pick two fights before swapping. Fourth, if the hero works only when teammates play perfectly, save it for coordinated groups." },
+      { heading: "How to Read Hero Value", body: "Hero value is not only elimination output. A hero can be high value by forcing cooldowns, protecting a support, denying an angle, creating objective time, or giving the team a simple engage signal. When a tier list ranks a hero highly, ask which job the hero solves and whether your team can actually use that job in the current match." },
       { heading: "Common Mistakes", body: "The biggest mistake is picking only from the top tier while ignoring team needs. Another mistake is swapping after every death. A hero can be correct even if one fight goes badly. Watch whether your pick creates value over several engagements: space, pressure, cooldowns forced, saves, or objective time." },
       { heading: "Advanced Tips", body: "Build a small hero pool: one comfort pick, one counter-pressure pick, and one team utility pick. This is more useful than trying to master every top-ranked hero. When balance shifts, test changes with the Meta Shift Planner before rebuilding your entire pool." },
+      { heading: "Small Hero Pool Plan", body: "Choose three heroes with different jobs instead of three heroes that all solve the same problem. One should be your comfort pick, one should answer pressure against your backline or front line, and one should work when the team needs utility more than damage. This keeps your swaps calm because each hero has a clear reason to enter the match." },
       { heading: "Checklist", body: "Identify role gap, choose hero by job, test two fights, review value created, swap only when the problem remains. Keep tier lists as a map of options, not a replacement for match reading." }
     ],
     table: { columns: ["Tier", "Meaning", "How to Use It"], rows: [["S", "High general value", "Safe first test if role fits."], ["A", "Strong but context-aware", "Use when map or team supports it."], ["B", "Playable comfort pick", "Keep if you consistently create value."], ["C", "Narrow or risky", "Use only with a clear reason."]] },
     takeaways: ["Tier lists are context, not orders.", "Team role gaps matter more than hype.", "A small flexible hero pool is better than chasing every top pick."],
     checklist: ["Find team problem", "Pick by role", "Test two fights", "Review value", "Swap with purpose"],
-    faq: [{ question: "Are these Marvel Rivals rankings official?", answer: "No. They are editorial planning guidance and should be tested against your rank, patch, and team." }]
+    internalLinks: [
+      { label: "Marvel Rivals best builds", url: "/games/marvel-rivals/best-builds", note: "Turn tier context into a role plan." },
+      { label: "Tier List Explorer", url: "/tools/tier-list-explorer", note: "Filter editorial rankings by tier." },
+      { label: "Meta Shift Planner", url: "/tools/meta-shift-planner", note: "Test balance changes without rebuilding your whole pool." }
+    ],
+    faq: [
+      { question: "Are these Marvel Rivals rankings official?", answer: "No. They are editorial planning guidance and should be tested against your rank, patch, and team." },
+      { question: "Should I swap after one lost fight?", answer: "Usually no. Give the pick two fights unless the matchup is clearly unplayable or your team is missing a required role." },
+      { question: "Is comfort more important than tier rank?", answer: "Comfort often wins in chaotic matches. Tier rank helps you choose options, but execution and team fit decide the result." },
+      { question: "How many heroes should I learn first?", answer: "Start with three: one comfort hero, one pressure answer, and one utility or team pick." }
+    ]
   },
   "minecraft/farms-guide": {
     readingTime: "11 min read",
@@ -246,14 +294,26 @@ const deepGuideOverrides = {
       { heading: "Quick Answer", body: "The best Minecraft farms are the ones that remove repeated chores at the right moment. Start with food, wood, basic crop, mob drops, and iron or villager support only when you can protect the area. Do not build a huge farm before you know what problem it solves. A small reliable farm near your base often helps more than a giant project you never finish." },
       { heading: "Recommended Setup", body: "For an early survival world, prioritize wheat or carrots, a tree area, animal pens, a simple mob drop source, and storage. After that, add sugar cane, kelp, bamboo, or iron depending on your goals. Keep farms close enough to use but organized enough that expansion does not ruin your base layout." },
       { heading: "Step-by-Step Strategy", body: "First, solve food. Second, solve wood and basic crafting resources. Third, add experience or mob drops if you are enchanting. Fourth, add automation only for resources you actually consume. Fifth, label storage before output becomes messy. This order keeps farms tied to progression instead of turning the world into disconnected machines." },
+      { heading: "Best Early Farm Order", body: "Use this practical order for a new survival world: food, wood, sugar cane, animal pen, basic mob drops, villager support, then iron or larger automation. Food and wood reduce everyday friction. Sugar cane unlocks books and maps. Animals support food, leather, and trading. Larger automation should wait until you have storage, lighting, and enough space to keep the base readable." },
       { heading: "Common Mistakes", body: "A common mistake is copying late-game farm designs with materials and mechanics you do not yet understand. Another is placing noisy or ugly farms in the middle of a base you want to enjoy. Farms should support the world. If the farm makes the world unpleasant to play in, move it, shrink it, or redesign the route." },
       { heading: "Advanced Tips", body: "Group farms by maintenance rhythm. Crops and animals belong near daily routes. Noisy or high-output farms can sit farther away. If you play with friends, assign farms by job: food, blocks, enchanting, trading, and travel. This makes the world feel organized and gives every project a clear purpose." },
+      { heading: "Storage and Path Planning", body: "A farm is only useful if its output is easy to collect and store. Add labels, paths, lighting, and overflow chests before output becomes annoying. Keep daily farms near the base loop, and move loud or bulky farms away from the main build. This helps the world stay pleasant instead of becoming a pile of machines around your front door." },
       { heading: "Checklist", body: "Build food first, then wood, then utility resources, then automation. Keep each farm small until you know the output is useful. Add signs, paths, and storage early so the base stays readable as the world grows." }
     ],
     table: { columns: ["Farm", "When to Build", "Why It Helps"], rows: [["Crop farm", "Day one", "Stable food and villager trades."], ["Tree area", "Early base", "Prevents constant wood trips."], ["Sugar cane", "Before enchanting", "Books, maps, and trading support."], ["Iron support", "Midgame", "Tools, rails, hoppers, and building utility."]] },
     takeaways: ["Build farms when they solve a repeated chore.", "Small reliable farms beat abandoned giant projects.", "Storage and paths are part of farm design."],
     checklist: ["Food farm", "Wood source", "Animal pen", "Sugar cane", "Storage labels", "Midgame utility farm"],
-    faq: [{ question: "What farm should I build first in Minecraft?", answer: "Food first. A simple crop or animal setup removes early pressure and lets you explore without constantly resetting." }]
+    internalLinks: [
+      { label: "Minecraft beginner guide", url: "/games/minecraft/beginner-guide", note: "Set up survival basics before automation." },
+      { label: "Farming Route Planner", url: "/tools/farming-route-planner", note: "Plan a short resource route by time and risk." },
+      { label: "Sandbox game guides", url: "/genres/sandbox", note: "Explore more sandbox progression hubs." }
+    ],
+    faq: [
+      { question: "What farm should I build first in Minecraft?", answer: "Food first. A simple crop or animal setup removes early pressure and lets you explore without constantly resetting." },
+      { question: "When should I build an iron farm?", answer: "Build iron support after food, storage, and village safety are stable. It is powerful, but it is not the first survival bottleneck." },
+      { question: "Should farms be near my main base?", answer: "Daily farms should be nearby. Loud, large, or ugly farms can sit farther away with a clear path and storage stop." },
+      { question: "Is automation always better?", answer: "No. A small manual farm can be better early if it is easy to maintain and does not require rare materials or complex mechanics." }
+    ]
   },
   "rust/pvp-loadout-guide": {
     readingTime: "9 min read",
